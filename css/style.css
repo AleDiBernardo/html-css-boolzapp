@@ -143,8 +143,9 @@ main {
 /* User */
 .user {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 7px;
     border-bottom: 1px solid lightgrey;
+
 }
 
 .contact-info {
@@ -270,12 +271,20 @@ main {
 }
 
 .select > i,
-.select .hour {
+.select .hour,
+.user .hour {
     color: gray;
 }
 
-.select .hour {
+.select .hour,
+.user .hour {
     font-size: 12px;
+}
+
+.user .hour {
+    padding-top: 12px;
+    padding-right: 10px;
+    display: none;
 }
 
 /* -------------------------------------------------------------------------- */
