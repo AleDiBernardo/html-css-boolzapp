@@ -66,6 +66,16 @@
         width: 70%;
     }
 
+    /* NOTIFICATION */
+    .notification {
+        display: flex;
+    }
+
+    /* SEARCH BAR */
+    .search-bar {
+        display: flex;
+    }
+
     /* CONTACT INFO */
     .contact-info {
         display: block;
