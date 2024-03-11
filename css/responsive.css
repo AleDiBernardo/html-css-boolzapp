@@ -21,15 +21,24 @@
 
     /* Header Chat */
     .chat-section .icons {
-        display: block;
+        display: flex;
         width: 20%;
     }
 
     /* Footer Chat */
     .ftr-chat .emoji,
     .ftr-chat .audio {
-        display: block;
+        display: flex;
+        font-size: 30px;
         width: 15%;
+    }
+
+    .ftr-chat .textbox {
+        width: 70%;
+    }
+
+    .ftr-chat #textbox {
+        width: 450px;
     }
 
 }
@@ -52,18 +61,18 @@
 
     /* NAV SECTION */
     .nav-section {
-        width: 30%;
+        width: 25%;
         height: 100%;
 
     }
 
     .nav-section .icons {
-        display: block;
+        display: flex;
     }
 
     /* CHAT SECTION */
     .chat-section {
-        width: 70%;
+        width: 75%;
     }
 
     /* NOTIFICATION */
@@ -78,8 +87,11 @@
 
     /* CONTACT INFO */
     .contact-info {
-        display: block;
+        display: flex;
     }
 
+    .ftr-chat #textbox {
+        width: 380px;
+    }
 
 }
