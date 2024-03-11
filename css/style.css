@@ -3,6 +3,7 @@
     --green-color: #009688;
     --our-msg-color: #D5F9BA;
     --notificatio-sec-color: #8EDAFC;
+    --gray-color: #EAEAEA;
 }
 
 /* RESET */
@@ -17,15 +18,16 @@ img {
 }
 
 
- /* -------------------------------------------------------------------------- */
- /*                                   COMMON                                   */
- /* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   COMMON                                   */
+/* -------------------------------------------------------------------------- */
 
 body {
     height: 100vh;
+    background: linear-gradient(to bottom, var(--green-color), var(--green-color) 20%, #D5DBD9 50px, #D5DBD9);
 }
 
- /* MAIN SECTION */
+/* MAIN SECTION */
 main {
     width: 100%;
     height: 100vh;
@@ -34,22 +36,62 @@ main {
     /* background-color: lightcoral; */
 }
 
+
+
 /* LEFT SECTION */
 .left-section {
+    position: relative;
     background-color: lightblue;
 }
 
+
+
 /* RIGHT SECTION */
 .right-section {
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: lightgreen;
 }
 
- /* -------------------------------------------------------------------------- */
- /*                                  UTILITIES                                 */
- /* -------------------------------------------------------------------------- */
+
+/* HEADER CHAT */
+.right-section .hdr-chat,
+.left-section .hdr-chat{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    width: 100%;
+    height: 80px;
+
+    /* debug */
+    background-color: var(--gray-color);
+}
+
+.left-section .hdr-chat {
+    border-right: 1px solid lightgrey;
+}
+
+/* Body Chat */
+
+.body-chat {
+    width: 100%;
+    height: 100vh;
+
+    /* debug */
+    background-image: url('../img/mine.jpg');
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  UTILITIES                                 */
+/* -------------------------------------------------------------------------- */
 
 .flex {
     display: flex;
+}
+
+.container-80 {
+    width: 80%;
 }
