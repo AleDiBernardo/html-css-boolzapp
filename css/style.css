@@ -70,6 +70,31 @@ main {
     background-color: var(--gray-color);
 }
 
+.right-section .profile-pic,
+.right-section .chat-info,
+.right-section .icons {
+
+    /* debug */
+    height: 60px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+.right-section .chat-info {
+    flex-grow: 1;
+}
+
+.right-section .profile-pic {
+    max-width: 20%;
+    aspect-ratio: 1;
+}
+
+.right-section .icons {
+    display: none;
+}
+
+
+
 .left-section .hdr-chat {
     border-right: 1px solid lightgrey;
 }
@@ -92,6 +117,21 @@ main {
     display: flex;
 }
 
-.container-80 {
-    width: 80%;
+.just-cont-sbtw {
+    justify-content: space-between;
+}
+
+.just-cont-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container-95 {
+    width: 95%;
+
+    /* debug */
+    background-color: lightcoral;
 }

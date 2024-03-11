@@ -17,6 +17,12 @@
     .right-section {
         width: 70%;
     }
+
+    .right-section .icons {
+        display: block;
+        width: 20%;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
