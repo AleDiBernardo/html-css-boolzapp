@@ -37,10 +37,6 @@
         width: 70%;
     }
 
-    .ftr-chat #textbox {
-        width: 450px;
-    }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -61,7 +57,7 @@
 
     /* NAV SECTION */
     .nav-section {
-        width: 25%;
+        width: 35%;
         height: 100%;
 
     }
@@ -72,7 +68,7 @@
 
     /* CHAT SECTION */
     .chat-section {
-        width: 75%;
+        width: 65%;
     }
 
     /* NOTIFICATION */
@@ -88,10 +84,6 @@
     /* CONTACT INFO */
     .contact-info {
         display: flex;
-    }
-
-    .ftr-chat #textbox {
-        width: 380px;
     }
 
 }

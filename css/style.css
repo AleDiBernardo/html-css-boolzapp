@@ -46,8 +46,6 @@ main {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* debug */
-    /* background-color: lightcoral; */
 }
 
 /* NAV SECTION */
@@ -76,15 +74,13 @@ main {
     display: none;
     width: 80%;
     padding-right: 20px;
-
-    /* debug */
     height: 60px;
 }
 
 /* Notification */
 .notification {
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: none;
     background-color: var(--notificatio-sec-color);
     padding: 10px;
@@ -99,26 +95,47 @@ main {
     color: gray;
 }
 
-.notification #search {
-    
-}
 
 /* Search Bar */
 .search-bar {
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: none;
-    background-color: red;
+    background-color: var(--gray-color);
+}
+
+.search-bar form {
+    width: 100%; 
+    padding: 0px 10px;
+}
+
+.search-bar #search {
+    width: 90%; 
+    height: 80%;
+    border: none;
+    font-size: 18px;
+}
+
+.search-bar #search:focus {
+    outline: none;
+}
+
+.search-bar form > button {
+    background-color: white;
+    height: 80%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 18px;
 }
 
 /* Contacts Container */
 .contacts-ctn {
     width: 100%;
-    overflow-y: scroll;
-
-    /* debug */
     height: 100%;
-    /* background-color: lightcoral; */
+    overflow-y: scroll;
 
 }
 
@@ -133,12 +150,7 @@ main {
 .contact-info {
     display: none;
     width: 75%;
-
-    /* debug */
     height: 60px;
-    background-color: lightblue;
-    border: 1px solid black;
-    
 }
 
 /* CHAT SECTION */
@@ -163,7 +175,6 @@ main {
     width: 100%;
     height: 80px;
 
-    /* debug */
     background-color: var(--gray-color);
 }
 
@@ -173,19 +184,23 @@ main {
     left: 0;
 }
 
-.chat-section .chat-info {
+.chat-section .chat-info,
+.nav-section .contact-info {
     padding-left: 10px;
     gap: 5px;
 }
 
-.chat-section .chat-info > span:first-child {
+.chat-section .chat-info > span:first-child,
+.nav-section .contact-info > span:first-child {
     font-weight:bold;
 }
 
-.chat-section .chat-info > span:nth-child(2) {
+.chat-section .chat-info > span:nth-child(2),
+.nav-section .contact-info > span:nth-child(2) {
     color: gray;
     font-size: 12px;
 }
+
 /* Right Section Header */
 
 .chat-section .chat-info {
@@ -214,8 +229,6 @@ main {
     width: 100%;
     height: 100%;
     overflow: auto;
-
-    /* debug */
     background-image: url('../img/mine.jpg');
 }
 
@@ -292,14 +305,28 @@ main {
 
 .ftr-chat .textbox {
     width: 100%;
+    
+}
+
+.ftr-chat .textbox > form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ftr-chat #textbox {
-    width: 400px;
-    height: 50px;
+    width: 100%;
+    height: 90%;
     border: none;
     border-radius: 5px;
     padding: 10px;
+    font-size: 18px;
+}
+
+.ftr-chat #textbox:focus {
+    outline: none;
 }
 
 
@@ -333,8 +360,6 @@ main {
 
 .container-95 {
     width: 95%;
-    /* debug */
-    /* background-color: lightcoral; */
 }
 
 .bell {
