@@ -55,12 +55,11 @@ main {
 }
 
 
-/* HEADER CHAT */
+/* HEADER CHAT AND FOOTER CHAT*/
 .right-section .hdr-chat,
-.left-section .hdr-chat{
+.left-section .hdr-chat,
+.right-section .ftr-chat{
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 9999;
 
     width: 100%;
@@ -70,6 +69,13 @@ main {
     background-color: var(--gray-color);
 }
 
+.right-section .hdr-chat,
+.left-section .hdr-chat {
+    top: 0;
+    left: 0;
+}
+
+/* Right Section Header */
 .right-section .profile-pic,
 .right-section .chat-info,
 .right-section .icons {
@@ -92,14 +98,15 @@ main {
 .right-section .icons {
     display: none;
 }
+/* -------------------------------------------------------------------------- */
 
-
-
+/* Left Section Header*/
 .left-section .hdr-chat {
     border-right: 1px solid lightgrey;
 }
+/* -------------------------------------------------------------------------- */
 
-/* Body Chat */
+/* BODY CHAT */
 
 .body-chat {
     width: 100%;
@@ -108,6 +115,34 @@ main {
     /* debug */
     background-image: url('../img/mine.jpg');
 }
+/* -------------------------------------------------------------------------- */
+
+/* FOOTER CHAT */
+.right-section .ftr-chat{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ftr-chat .emoji,
+.ftr-chat .audio {
+    display: none;
+}
+
+.ftr-chat .textbox, 
+.ftr-chat .emoji,
+.ftr-chat .audio{
+
+    /* debug */
+    height: 60px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+.ftr-chat .textbox {
+    flex-grow: 1;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                  UTILITIES                                 */
