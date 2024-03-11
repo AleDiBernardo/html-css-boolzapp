@@ -25,7 +25,6 @@ img {
 
 body {
     height: 100vh;
-    background: linear-gradient(to bottom, var(--green-color), var(--green-color) 20%, #D5DBD9 50px, #D5DBD9);
 }
 
 /* MAIN SECTION */
@@ -39,16 +38,65 @@ main {
 
 
 
-/* LEFT SECTION */
-.left-section {
+/* NAV SECTION */
+.nav-section {
+    padding: 10px 0;
     position: relative;
-    background-color: lightblue;
+    display: none;
+    background-color: white;
 }
 
+.nav-section .container-95 {
+    margin: 0 auto;
+    background: transparent;
+}
 
+.nav-section .profile-pic > img{
+    border-radius: 50%;
+    width: 50px;
+}
 
-/* RIGHT SECTION */
-.right-section {
+.nav-section .icons {
+    display: none;
+    width: 80%;
+
+    /* debug */
+    height: 60px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/* Contacts Container */
+.contacts-ctn {
+    width: 100%;
+    padding-top: 75px;
+
+    /* debug */
+    height: 100%;
+    /* background-color: lightcoral; */
+
+}
+
+/* User */
+.user {
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.contact-info {
+    display: none;
+    width: 75%;
+
+    /* debug */
+    height: 60px;
+    background-color: lightblue;
+    border: 1px solid black;
+    
+}
+
+/* CHAT SECTION */
+.chat-section {
     position: relative;
     width: 100%;
     height: 100%;
@@ -57,9 +105,9 @@ main {
 
 
 /* HEADER CHAT AND FOOTER CHAT*/
-.right-section .hdr-chat,
-.left-section .hdr-chat,
-.right-section .ftr-chat{
+.chat-section .hdr-chat,
+.nav-section .hdr-chat,
+.chat-section .ftr-chat{
     position: absolute;
     z-index: 9999;
 
@@ -70,16 +118,16 @@ main {
     background-color: var(--gray-color);
 }
 
-.right-section .hdr-chat,
-.left-section .hdr-chat {
+.chat-section .hdr-chat,
+.nav-section .hdr-chat {
     top: 0;
     left: 0;
 }
 
 /* Right Section Header */
-.right-section .profile-pic,
-.right-section .chat-info,
-.right-section .icons {
+.chat-section .profile-pic,
+.chat-section .chat-info,
+.chat-section .icons {
 
     /* debug */
     height: 60px;
@@ -87,22 +135,22 @@ main {
     background-color: lightblue;
 }
 
-.right-section .chat-info {
+.chat-section .chat-info {
     flex-grow: 1;
 }
 
-.right-section .profile-pic {
+.chat-section .profile-pic {
     max-width: 20%;
     aspect-ratio: 1;
 }
 
-.right-section .icons {
+.chat-section .icons {
     display: none;
 }
 /* -------------------------------------------------------------------------- */
 
 /* Left Section Header*/
-.left-section .hdr-chat {
+.nav-section .hdr-chat {
     border-right: 1px solid lightgrey;
 }
 /* -------------------------------------------------------------------------- */
@@ -129,7 +177,7 @@ main {
 
 .your-message,
 .my-message {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .my-message {
@@ -167,7 +215,7 @@ main {
 /* -------------------------------------------------------------------------- */
 
 /* FOOTER CHAT */
-.right-section .ftr-chat{
+.chat-section .ftr-chat{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -199,6 +247,10 @@ main {
 
 .flex {
     display: flex;
+}
+
+.col-dir {
+    flex-direction: column;
 }
 
 .just-cont-sbtw {
