@@ -1,7 +1,8 @@
 /* ROOT */
 :root {
     --green-color: #009688;
-    --our-msg-color: #D5F9BA;
+    --my-msg-color: #D5F9BA;
+    --your-msg-color: #FFFFFF;
     --notificatio-sec-color: #8EDAFC;
     --gray-color: #EAEAEA;
 }
@@ -110,11 +111,59 @@ main {
 
 .body-chat {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    overflow: auto;
 
     /* debug */
     background-image: url('../img/mine.jpg');
 }
+
+.body-chat > .container {
+    padding: 100px 20px;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: transparent;
+}
+
+/* MESSAGES STYLE */
+
+.your-message,
+.my-message {
+    padding: 10px 0;
+}
+
+.my-message {
+    justify-content: flex-end;
+}
+
+.message {
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.your-message > .message {
+    background-color: var(--your-msg-color);
+}
+
+.my-message > .message {
+    background-color: var(--my-msg-color);
+}
+
+/* Select */
+.select {
+    flex-direction: column;
+}
+
+.select > i,
+.select .hour {
+    color: gray;
+}
+
+.select .hour {
+    font-size: 12px;
+}
+
 /* -------------------------------------------------------------------------- */
 
 /* FOOTER CHAT */
@@ -166,7 +215,6 @@ main {
 
 .container-95 {
     width: 95%;
-
     /* debug */
     background-color: lightcoral;
 }
