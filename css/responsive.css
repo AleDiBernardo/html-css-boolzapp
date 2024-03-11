@@ -1,0 +1,35 @@
+/* MOBILE FIRST */
+@media screen and (min-width:768px) {
+
+    /* MAIN SECTION */
+    main {
+        display: flex;
+    }
+
+    /* LEFT SECTION */
+    .left-section {
+        width: 30%;
+        height: 100%;
+
+    }
+
+    /* RIGHT SECTION */
+    .right-section {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MAIN SECTION */
+    main {
+        width: 80%;
+        height: 95%;
+    }
+}
