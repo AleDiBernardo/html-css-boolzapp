@@ -289,21 +289,6 @@ main {
     font-size: 12px;
 }
 
-
-/* .select label {
-    padding: 10px;
-    width: 100%;
-    background-color: red;
-}
-
-.select label > i {
-    color: gray;
-}
-
-.select label:hover > span {
-    display: flex;
-} */
-
 .select .dropdown {
     position: relative;
 }
@@ -319,7 +304,8 @@ main {
     right: 5px;
     background-color: white;
     font-size: 12px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.4);
 
 }
 
@@ -332,7 +318,7 @@ main {
 }
 
 .select .dropdown-content ul li:hover{
-    background-color: lightgray;
+    background-color:#EAEAEA;
 }
 
 .select .dropbtn {
@@ -351,7 +337,6 @@ main {
 .select .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 .user .hour {
     padding-top: 12px;
