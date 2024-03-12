@@ -5,6 +5,9 @@
     --your-msg-color: #FFFFFF;
     --notificatio-sec-color: #8EDAFC;
     --gray-color: #EAEAEA;
+
+    --nav-sec-width: 0px;
+    
 }
 
 /* RESET */
@@ -157,7 +160,7 @@ main {
 /* CHAT SECTION */
 .chat-section {
     position: relative;
-    width: 100%;
+    width: calc(100% - var(--nav-sec-width));
     height: 100%;
     background-color: lightgreen;
 }

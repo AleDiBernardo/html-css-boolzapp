@@ -1,6 +1,10 @@
 /* MOBILE FIRST */
 @media screen and (min-width:768px) {
 
+    :root {
+        --nav-sec-width: 75px;
+    }
+
     /* MAIN SECTION */
     main {
         display: flex;
@@ -9,14 +13,14 @@
     /* NAV SECTION */
     .nav-section {
         display: flex;
-        width: 10%;
+        width: var(--nav-sec-width);
         height: 100%;
 
     }
 
     /* CHAT SECTION */
     .chat-section {
-        width: 90%;
+        width: calc(100% - var(--nav-sec-width));
     }
 
     /* Header Chat */
@@ -41,6 +45,10 @@
 
 @media screen and (min-width: 992px) {
 
+    :root {
+        --nav-sec-width: 350px;
+    }
+
     body {
         display: flex;
         justify-content: center;
@@ -57,7 +65,7 @@
 
     /* NAV SECTION */
     .nav-section {
-        width: 35%;
+        width: var(--nav-sec-width);
         height: 100%;
 
     }
@@ -68,7 +76,7 @@
 
     /* CHAT SECTION */
     .chat-section {
-        width: 65%;
+        width: calc(100% - var(--nav-sec-width));
     }
 
     /* NOTIFICATION */
