@@ -275,6 +275,7 @@ main {
 /* Select */
 .select {
     flex-direction: column;
+    position: relative;
 }
 
 .select > i,
@@ -287,6 +288,70 @@ main {
 .user .hour {
     font-size: 12px;
 }
+
+
+/* .select label {
+    padding: 10px;
+    width: 100%;
+    background-color: red;
+}
+
+.select label > i {
+    color: gray;
+}
+
+.select label:hover > span {
+    display: flex;
+} */
+
+.select .dropdown {
+    position: relative;
+}
+
+.select .dropdown .chevron {
+    font-size: 16px;
+}
+
+.select .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    background-color: white;
+    font-size: 12px;
+    border: 1px solid black;
+
+}
+
+.select .dropdown-content ul li button{
+    font-size: 15px;
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    color: black;
+}
+
+.select .dropdown-content ul li:hover{
+    background-color: lightgray;
+}
+
+.select .dropbtn {
+    color: gray;
+    padding: 8px;
+    padding-top: 0px;
+    font-size: 16px;
+    border: none;
+}
+
+.select .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.select .dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 .user .hour {
     padding-top: 12px;
